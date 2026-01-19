@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark theme base colors */
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+/* Typography optimizations */
+h1 {
+  @apply text-4xl font-bold tracking-tight text-slate-50 mb-4;
+}
+
+h2 {
+  @apply text-3xl font-semibold tracking-tight text-slate-100 mb-3;
+}
+
+h3 {
+  @apply text-2xl font-semibold text-slate-200 mb-2;
+}
+
+p {
+  @apply text-slate-300 leading-relaxed;
+}
+
+a {
+  @apply text-blue-400 hover:text-blue-300 transition-colors;
+}
+
+code {
+  @apply bg-slate-900 px-2 py-1 rounded text-sm font-mono text-blue-300;
+}
+
+pre {
+  @apply bg-slate-900 p-4 rounded-lg overflow-x-auto border border-slate-800;
+}
+
+/* Link styling */
+a:focus-visible {
+  @apply outline-2 outline-offset-2 outline-blue-400;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+}
